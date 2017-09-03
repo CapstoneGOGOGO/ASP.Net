@@ -1595,7 +1595,7 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px);
+  height: calc(2.4rem + 2px);
 }
 
 select.form-control:focus::-ms-value {
@@ -2959,7 +2959,7 @@ tbody.collapse.show {
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-height: 1.5rem;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
   margin-right: 1rem;
 }
 
@@ -2971,11 +2971,11 @@ tbody.collapse.show {
 
 .custom-control-input:checked ~ .custom-control-indicator {
   color: #fff;
-  background-color: #007bff;
+  background-color: #b10002;
 }
 
 .custom-control-input:focus ~ .custom-control-indicator {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #007bff;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #b10002;
 }
 
 .custom-control-input:active ~ .custom-control-indicator {
@@ -2996,19 +2996,21 @@ tbody.collapse.show {
   top: 0.25rem;
   left: 0;
   display: block;
-  width: 1rem;
-  height: 1rem;
+  width: 20px;
+  height: 20px;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: #ddd;
+  background-color: #c1c1c1;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
 }
-
+span.custom-control-description {
+    line-height: 1.6;
+}
 .custom-checkbox .custom-control-indicator {
   border-radius: 0.25rem;
 }

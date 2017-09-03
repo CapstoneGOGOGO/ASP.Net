@@ -11,7 +11,10 @@
     <div>
     
      
-    
+      <input runat="server" id="CusName" type="text" class="form-control" placeholder="Điền tên..."  />
+        
+      <input runat="server" id="Text1" type="text" class="form-control" placeholder="Điền tên..." text="123"/>
+        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
     </div>
         <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>

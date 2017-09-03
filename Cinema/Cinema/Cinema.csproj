@@ -99,6 +99,7 @@
     <Content Include="content\dangky.aspx" />
     <Content Include="content\dangnhap.aspx" />
     <Content Include="content\home.aspx" />
+    <Content Include="content\Regis.aspx" />
     <Content Include="content\thongtintaikhoan.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\cgv.css" />
@@ -156,6 +157,13 @@
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="content\Regis.aspx.cs">
+      <DependentUpon>Regis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\Regis.aspx.designer.cs">
+      <DependentUpon>Regis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="content\thongtintaikhoan.aspx.cs">
       <DependentUpon>thongtintaikhoan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -176,7 +184,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\slide\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -12,11 +12,16 @@ namespace Cinema
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
 
+            CusName.Value = Text1.Value;
             GridView1.DataSource = DAO.DataProvider.Instance.Query("chair");
             GridView1.DataBind();
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (!IsPostBack) { CusName.Value = Text1.Value; }
         }
     }
 }
