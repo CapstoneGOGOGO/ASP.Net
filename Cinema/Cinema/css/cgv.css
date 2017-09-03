@@ -1,0 +1,165 @@
+﻿.bg-cgv {
+    background: linear-gradient(to bottom, #780001, #560001);
+    box-shadow: 0 0 18px 0px rgba(0, 0, 0, 0.43);
+}
+
+.navbar-cgv .navbar-nav .active > .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-cgv .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+.navbar-cgv .navbar-nav .active > .nav-link {
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 0 12px red;
+    box-shadow: inset 0px 0px 20px 0px #ff5e5e;
+    border-radius: 5px;
+}
+
+    .navbar-cgv .navbar-nav .active > .nav-link:hover {
+        text-shadow: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+.navbar-cgv .navbar-nav .nav-link:hover {
+    color: black;
+    font-weight: 600;
+}
+
+body {
+    background-color: black;
+    background-image: url(../images/background.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: repeat-x;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu-cgv {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link {
+    padding: 0.8rem 1rem;
+}
+
+.nav-cgv-item {
+    background-image: url('../images/transparent.png');
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+}
+
+    .nav-cgv-item:hover {
+        background-image: url(../images/cgv-btn.png);
+        background-size: cover;
+        color: black;
+        transition: all 0.2s ease-out;
+    }
+
+.carousel-control-prev, .carousel-control-next {
+    opacity: 0.7;
+}
+
+.carousel-control-next {
+    background: linear-gradient(to right, rgba(120, 0, 1, 0), rgba(120, 0, 1, 0), rgba(0, 0, 0,0.7));
+}
+
+.carousel-control-prev {
+    background: linear-gradient(to left, rgba(120, 0, 1, 0), rgba(120, 0, 1, 0), rgba(0, 0, 0,0.7));
+}
+
+@media (min-width: 1140px) {
+    .cgv-slider {
+        height: 507px;
+    }
+}
+.cgv-card{
+    /*box-shadow: 0 0 14px red inset;
+    border: 1px solid red;*/
+    background-color: transparent;
+    border: 0;
+}
+.cgv-card-header {
+    background: #b10002;
+    padding: 5px 0px 50px 15px;
+    border-radius: 5px 5px 0 0!important;
+    color: white;
+    font-weight:100;
+    font-size: 32px;
+}
+.cgv-card-body {
+    border-radius: 20px 20px 0 0;
+    background: rgb(230, 230, 230);
+    margin-top: -42px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+.footer {
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    height: 147px;
+    background-repeat: no-repeat;
+}
+.connectfoot {
+    min-height: 20px;
+}
+.partner {
+    max-width: 100%;
+    padding-top: 11px;
+    background: rgb(230, 230, 230);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0) inset;
+    padding-left: 75px;
+    margin-top: 20px;
+}
+.cgv-container{
+    min-height:1080px;
+}
+.cgv-form-control{
+    border: 0;
+}
+.buy-ticket {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+}
+.card-filmdetail {
+    background-color: transparent;
+}
+.btn-secondary.active{
+    background-color: #575a5d;
+}
+h4{
+    font-weight: 400;
+}
+.table-cgv {
+  color: #fff;
+  background-color: #822b2c;
+}
+
+.table-cgv th,
+.table-cgv td,
+.table-cgv thead th {
+  border-color: #a94949;
+}
+
+.table-cgv.table-bordered {
+  border: 0;
+}
+
+.table-cgv.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table-cgv.table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+}

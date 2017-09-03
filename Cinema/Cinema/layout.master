@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="layout.master.cs" Inherits="layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="Header" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/font-awesome.css" rel="stylesheet" />
+    <link href="/css/cgv.css" rel="stylesheet" />
+    <link href="/css/flip-carousel.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-cgv bg-cgv">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/images/cgvlogo.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto menu-cgv">
+                    <li class="nav-item nav-cgv-item" style="width: 20%;">
+                        <a class="nav-link" href="#">Phim <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nav-cgv-item" style="width: 20%;">
+                        <a class="nav-link" href="#">Lịch chiếu</a>
+                    </li>
+                    <li class="nav-item nav-cgv-item active" style="width: 20%;">
+                        <a class="nav-link" href="#">Liên hệ CGV</a>
+                    </li>
+                    <li class="nav-item nav-cgv-item" style="width: 20%;">
+                        <a class="nav-link" href="#">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item nav-cgv-item" style="width: 20%;">
+                        <a class="nav-link" href="#">Đăng ký</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" style="margin-left: 5px;">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control cgv-form-control" placeholder="Tìm kiếm phim..." aria-label="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger btn-sm" type="button">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="container cgv-container">
+            <asp:ContentPlaceHolder ID="Body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <img src="https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/brand-type-film-footer.png" class="partner" />
+        </div>
+    </div>
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/html5shiv.js"></script>
+<script src="/js/flip-carousel.js"></script>
+<asp:contentplaceholder id="Footer" runat="server">
+    </asp:contentplaceholder>
+</html>
