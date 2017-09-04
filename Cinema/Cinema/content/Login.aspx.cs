@@ -13,7 +13,6 @@ namespace Cinema.content
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void login_Click(object sender, EventArgs e)
@@ -26,7 +25,7 @@ namespace Cinema.content
                 else
                 {
                     alert.Attributes["class"] = "alert alert-danger";
-                    alert.InnerText = "Tên tài khoản hoặc mật khẩu sai";
+                    alert.InnerText = "Tên tài khoản hoặc mật khẩu không đúng!";
 
                 }
             }

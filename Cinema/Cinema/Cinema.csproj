@@ -97,14 +97,15 @@
     <Content Include="content\chitietphim.aspx" />
     <Content Include="content\chonloaive.aspx" />
     <Content Include="content\home.aspx" />
-    <Content Include="content\Login.aspx" />
-    <Content Include="content\Regis.aspx" />
+    <Content Include="content\login.aspx" />
+    <Content Include="content\register.aspx" />
     <Content Include="content\thongtintaikhoan.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\cgv.css" />
     <Content Include="css\font-awesome.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\my.css" />
+    <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="images\background.jpg" />
     <Content Include="images\cgv-btn.png" />
@@ -123,8 +124,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
-    <Content Include="WebForm1.aspx" />
-    <Content Include="layout.master" />
+    <Content Include="layout.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -148,19 +148,19 @@
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="content\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="content\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="content\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="content\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="content\Regis.aspx.cs">
-      <DependentUpon>Regis.aspx</DependentUpon>
+    <Compile Include="content\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="content\Regis.aspx.designer.cs">
-      <DependentUpon>Regis.aspx</DependentUpon>
+    <Compile Include="content\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
     </Compile>
     <Compile Include="content\thongtintaikhoan.aspx.cs">
       <DependentUpon>thongtintaikhoan.aspx</DependentUpon>
@@ -168,19 +168,22 @@
     </Compile>
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\AccountDAO.cs" />
-    <Compile Include="layout.master.cs">
-      <DependentUpon>layout.master</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="layout.Master.cs">
+      <DependentUpon>layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layout.Master.designer.cs">
+      <DependentUpon>layout.Master</DependentUpon>
     </Compile>
     <Compile Include="Model\Account.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\slide\" />

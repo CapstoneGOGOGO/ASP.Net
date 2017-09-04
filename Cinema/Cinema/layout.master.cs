@@ -5,10 +5,18 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class layout : System.Web.UI.MasterPage
+namespace Cinema
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class layout : System.Web.UI.MasterPage
     {
-
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (HttpContext.Current.Request.Url.AbsolutePath == "/content/home.aspx")
+                navFilm.Attributes["class"] = "nav-item nav-cgv-item active";
+            if (HttpContext.Current.Request.Url.AbsolutePath == "/content/login.aspx")
+                navLogin.Attributes["class"] = "nav-item nav-cgv-item active";
+            if (HttpContext.Current.Request.Url.AbsolutePath == "/content/register.aspx")
+                navRegister.Attributes["class"] = "nav-item nav-cgv-item active";
+        }
     }
 }

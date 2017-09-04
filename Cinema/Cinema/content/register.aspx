@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.master" AutoEventWireup="true" CodeBehind="Regis.aspx.cs" Inherits="Cinema.content.Regis" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.master" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="Cinema.content.Regis" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Header" runat="Server">
     <title>CGV | Đăng ký</title>
 </asp:Content>

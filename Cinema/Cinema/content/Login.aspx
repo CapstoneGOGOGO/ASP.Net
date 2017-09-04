@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Cinema.content.Login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="Cinema.content.Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Header" runat="Server">
     <title>CGV | Đăng nhập</title>
@@ -25,9 +25,8 @@
                             </div>
                         </div>
                           <asp:Button ID="login" runat="server" Text="Đăng nhập" type="submit" class="btn btn-danger btn-block" OnClick="login_Click" />
-                        <div id="alert" runat="server" role="alert">
-                            
-                        </div>
+                        <br />
+                        <div id="alert" class="as" runat="server" role="alert"></div>
                     </div>
                 </div>
             </div>

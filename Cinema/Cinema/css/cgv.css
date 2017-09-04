@@ -108,6 +108,7 @@ body {
     background-size: cover;
     height: 147px;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .connectfoot {
     min-height: 20px;

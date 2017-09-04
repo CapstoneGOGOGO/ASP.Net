@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="layout.master.cs" Inherits="layout" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layout.master.cs" Inherits="Cinema.layout" %>
 
 <!DOCTYPE html>
 
@@ -6,7 +6,7 @@
 <head runat="server">
     <asp:ContentPlaceHolder ID="Header" runat="server">
     </asp:ContentPlaceHolder>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/font-awesome.css" rel="stylesheet" />
     <link href="/css/cgv.css" rel="stylesheet" />
@@ -24,20 +24,20 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto menu-cgv">
-                    <li class="nav-item nav-cgv-item" style="width: 20%;">
-                        <a class="nav-link" href="#">Phim <span class="sr-only">(current)</span></a>
+                    <li class="nav-item nav-cgv-item" id="navFilm" runat="server" style="width: 20%;">
+                        <a class="nav-link" href="/content/home.aspx">Phim</a>
                     </li>
-                    <li class="nav-item nav-cgv-item" style="width: 20%;">
+                    <li class="nav-item nav-cgv-item" id="navSchedule" runat="server" style="width: 20%;">
                         <a class="nav-link" href="#">Lịch chiếu</a>
                     </li>
-                    <li class="nav-item nav-cgv-item active" style="width: 20%;">
+                    <li class="nav-item nav-cgv-item" id="navContact" runat="server" style="width: 20%;">
                         <a class="nav-link" href="#">Liên hệ CGV</a>
                     </li>
-                    <li class="nav-item nav-cgv-item" style="width: 20%;">
-                        <a class="nav-link" href="#">Đăng nhập</a>
+                    <li class="nav-item nav-cgv-item" id="navLogin" runat="server" style="width: 20%;">
+                        <a class="nav-link" href="/content/login.aspx">Đăng nhập</a>
                     </li>
-                    <li class="nav-item nav-cgv-item" style="width: 20%;">
-                        <a class="nav-link" href="#">Đăng ký</a>
+                    <li class="nav-item nav-cgv-item" id="navRegister" runat="server" style="width: 20%;">
+                        <a class="nav-link" href="/content/register.aspx">Đăng ký</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0" style="margin-left: 5px;">
