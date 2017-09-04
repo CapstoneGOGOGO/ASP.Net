@@ -21,17 +21,27 @@ namespace Cinema.DAO
             }
         }
         private String stringConnection = "Data Source=DESKTOP-J6H04BI\\SQLEXPRESS;Initial Catalog=QLCGV;Integrated Security=True";
-        public DataTable Query(String query )
+        public DataTable reader(String query)
         {
-           
+
             SqlConnection cnn = new SqlConnection(stringConnection);
             DataTable table = new DataTable();
             cnn.Open();
             SqlCommand cmd = new SqlCommand(query, cnn);
-             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             adapter.Fill(table);
             cnn.Close();
             return table;
+        }
+        public object scalar(String query)
+        {
+            SqlConnection cnn = new SqlConnection(stringConnection);
+            Object data = 0;
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(query, cnn);
+            data = cmd.ExecuteScalar();
+            cnn.Close();
+            return data;
         }
     }
 }

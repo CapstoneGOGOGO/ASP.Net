@@ -10,42 +10,7 @@
                                 <button class="btn btn-success btn-sm float-right" data-toggle="modal" data-target="#themphong">Thêm phòng <i class="fa fa-plus" aria-hidden="true"></i></button>
             </h4>
             <div class="card-body">
-                <table class="table table-striped">
-                    <thead class="thead-inverse">
-                        <tr>
-                            <th>STT</th>
-                            <th>Tên phòng</th>
-                            <th>Loại phòng</th>
-                            <th>Số lượng ghế</th>
-                            <th>Tình trạng</th>
-                            <th>Sửa bố cục phòng</th>
-                            <th>Sửa thông tin phòng</th>
-                            <th>Xóa</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>P11</td>
-                            <td>3D</td>
-                            <td>50</td>
-                            <td>Tốt</td>
-                            <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-                            <td><a href="#" class="btn btn-outline-info btn-sm btn-block btn-edit" data-toggle="modal" data-target="#suattphong"><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
-                            <td><a href="#" class="btn btn-outline-info btn-sm btn-block btn-edit" data-toggle="modal" data-target="#xoaphong"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>P12</td>
-                            <td>4D</td>
-                            <td>70</td>
-                            <td>Tốt</td>
-                            <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-                            <td><a href="#" class="btn btn-outline-info btn-sm btn-block btn-edit" data-toggle="modal" data-target="#suattphong"><i class="fa fa-pencil-square" aria-hidden="true"></i></a></td>
-                            <td><a href="#" class="btn btn-outline-info btn-sm btn-block btn-edit" data-toggle="modal" data-target="#xoaphong"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
-                        </tr>
-                    </tbody>
-                </table>
+               <asp:PlaceHolder ID = "PlaceHolder1" runat="server" />
             </div>
         </div>
     </div>

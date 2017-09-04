@@ -96,7 +96,7 @@
   <ItemGroup>
     <Content Include="admin\Default.aspx" />
     <Content Include="admin\roomlayout.aspx" />
-    <Content Include="admin\roomnanger.aspx" />
+    <Content Include="admin\roommanager.aspx" />
     <Content Include="content\chitietphim.aspx" />
     <Content Include="content\chonloaive.aspx" />
     <Content Include="content\home.aspx" />
@@ -161,12 +161,12 @@
     <Compile Include="admin\roomlayout.aspx.designer.cs">
       <DependentUpon>roomlayout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\roomnanger.aspx.cs">
-      <DependentUpon>roomnanger.aspx</DependentUpon>
+    <Compile Include="admin\roommanager.aspx.cs">
+      <DependentUpon>roommanager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\roomnanger.aspx.designer.cs">
-      <DependentUpon>roomnanger.aspx</DependentUpon>
+    <Compile Include="admin\roommanager.aspx.designer.cs">
+      <DependentUpon>roommanager.aspx</DependentUpon>
     </Compile>
     <Compile Include="content\chitietphim.aspx.cs">
       <DependentUpon>chitietphim.aspx</DependentUpon>

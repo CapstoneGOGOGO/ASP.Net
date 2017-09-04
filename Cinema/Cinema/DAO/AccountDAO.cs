@@ -17,7 +17,6 @@ namespace Cinema.DAO
                 if (instance == null) instance = new AccountDAO();
                 return instance;
             }
-
             set
             {
                 instance = value;
@@ -28,7 +27,7 @@ namespace Cinema.DAO
         {
             String query = "SELECT * FROM dbo.TAIKHOAN WHERE tenTK ='"+account.UserName+"' AND matKhau='"+account.Password+"'";
 
-            return DataProvider.Instance.Query(query).Rows.Count > 0;
+            return DataProvider.Instance.reader(query).Rows.Count > 0;
         }
     }
 }
