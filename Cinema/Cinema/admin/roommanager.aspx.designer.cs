@@ -11,7 +11,7 @@ namespace Cinema.admin
 {
 
 
-    public partial class roomnanger
+    public partial class roommanager
     {
     }
 }

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Cinema.admin
 {
-    public partial class roomnanger : System.Web.UI.Page
+    public partial class roommanager : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

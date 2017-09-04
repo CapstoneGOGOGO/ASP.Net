@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/adminlayout.Master" AutoEventWireup="true" CodeBehind="roomnanger.aspx.cs" Inherits="Cinema.admin.roomnanger" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/adminlayout.Master" AutoEventWireup="true" CodeBehind="roommanager.aspx.cs" Inherits="Cinema.admin.roommanager" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Header" runat="server">
     <title>CGV | Quản lý phòng</title>
