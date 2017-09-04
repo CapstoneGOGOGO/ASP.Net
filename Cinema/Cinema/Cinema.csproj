@@ -94,17 +94,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\Default.aspx" />
+    <Content Include="admin\roomlayout.aspx" />
+    <Content Include="admin\roomnanger.aspx" />
     <Content Include="content\chitietphim.aspx" />
     <Content Include="content\chonloaive.aspx" />
     <Content Include="content\home.aspx" />
     <Content Include="content\login.aspx" />
     <Content Include="content\register.aspx" />
     <Content Include="content\thongtintaikhoan.aspx" />
+    <Content Include="css\admin.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\cgv.css" />
     <Content Include="css\font-awesome.css" />
     <Content Include="css\font-awesome.min.css" />
-    <Content Include="css\my.css" />
     <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="images\background.jpg" />
@@ -125,6 +128,7 @@
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="layout.Master" />
+    <Content Include="adminlayout.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -136,6 +140,34 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminlayout.Master.cs">
+      <DependentUpon>adminlayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlayout.Master.designer.cs">
+      <DependentUpon>adminlayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\roomlayout.aspx.cs">
+      <DependentUpon>roomlayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\roomlayout.aspx.designer.cs">
+      <DependentUpon>roomlayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\roomnanger.aspx.cs">
+      <DependentUpon>roomnanger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\roomnanger.aspx.designer.cs">
+      <DependentUpon>roomnanger.aspx</DependentUpon>
+    </Compile>
     <Compile Include="content\chitietphim.aspx.cs">
       <DependentUpon>chitietphim.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
