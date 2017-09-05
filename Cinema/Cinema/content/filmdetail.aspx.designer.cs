@@ -7,135 +7,117 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Cinema.admin {
+namespace Cinema.content {
     
     
-    public partial class roommanager {
+    public partial class filmdetail {
         
         /// <summary>
-        /// alert control.
+        /// film_bigname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl alert;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_bigname;
         
         /// <summary>
-        /// PlaceHolder1 control.
+        /// film_detailcontent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_detailcontent;
         
         /// <summary>
-        /// form1 control.
+        /// film_poster control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlImage film_poster;
         
         /// <summary>
-        /// add_roomID control.
+        /// film_ten control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText add_roomID;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_ten;
         
         /// <summary>
-        /// add_cinemaType control.
+        /// film_daodien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect add_cinemaType;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_daodien;
         
         /// <summary>
-        /// add_roomStatus control.
+        /// film_dienvien control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect add_roomStatus;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_dienvien;
         
         /// <summary>
-        /// add_numberOfSeat control.
+        /// film_theloai control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl add_numberOfSeat;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_theloai;
         
         /// <summary>
-        /// Button1 control.
+        /// film_khoichieu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_khoichieu;
         
         /// <summary>
-        /// edit_roomID control.
+        /// film_thoiluong control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText edit_roomID;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_thoiluong;
         
         /// <summary>
-        /// edit_cinemaType control.
+        /// film_gioihantuoi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect edit_cinemaType;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_gioihantuoi;
         
         /// <summary>
-        /// edit_numberOfSeat control.
+        /// film_ngonngu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl edit_numberOfSeat;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_ngonngu;
         
         /// <summary>
-        /// btn_ApplyRoomSettings control.
+        /// film_mota control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_ApplyRoomSettings;
-        
-        /// <summary>
-        /// labelroomID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl labelroomID;
-        
-        /// <summary>
-        /// deleteRecord control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button deleteRecord;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_mota;
     }
 }

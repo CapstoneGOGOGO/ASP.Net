@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -17,6 +18,12 @@ namespace Cinema
                 navLogin.Attributes["class"] = "nav-item nav-cgv-item active";
             if (HttpContext.Current.Request.Url.AbsolutePath == "/content/register.aspx")
                 navRegister.Attributes["class"] = "nav-item nav-cgv-item active";
+               
+            if(Session["account"] != null)
+            {
+                name.InnerText = "Xin chào " + Session["account"].ToString();
+              
+            }
         }
     }
 }

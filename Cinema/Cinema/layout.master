@@ -33,24 +33,48 @@
                     <li class="nav-item nav-cgv-item" id="navContact" runat="server" style="width: 20%;">
                         <a class="nav-link" href="#">Liên hệ CGV</a>
                     </li>
-                    <li class="nav-item nav-cgv-item" id="navLogin" runat="server" style="width: 20%;">
-                        <a class="nav-link" href="/content/login.aspx">Đăng nhập</a>
-                    </li>
                     <li class="nav-item nav-cgv-item" id="navRegister" runat="server" style="width: 20%;">
                         <a class="nav-link" href="/content/register.aspx">Đăng ký</a>
                     </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0" style="margin-left: 5px;">
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control cgv-form-control" placeholder="Tìm kiếm phim..." aria-label="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-danger btn-sm" type="button">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                        </span>
-                    </div>
-                </form>
+                    <% if (Session["account"] == null)
+                        {  %>
+                    <li class="nav-item nav-cgv-item" id="navLogin" runat="server" style="width: 20%; color: azure;">
+                        <a class="nav-link" href="/content/login.aspx">Đăng nhập</a>
+                    </li>
+                    <%  }
+                        else
+                        {%>
+                    <li id="navUser" runat="server" style="width: 20%; color: azure;">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="name" runat="server" style="height: 100%; background-color: initial; margin-top: 3%; border-color: crimson;" />
+                            <ul class="dropdown-menu" style="width: 300%;background-color: rgba(0, 255, 255, 0);"">
+
+                                
+                                   <div class="page-header"> <h3 style="background-color: #c9d6bd;">Thông Tin Tài Khoản</h3></div>
+                                <div class="jumbotron" style="background-color: rgb(230, 229, 184);margin-top: -12px;">
+
+
+
+                                    <div class="row">
+                                            <div class="col-sm-3">.col-sm-4</div>
+                                            <div class="col-sm-9">.col-sm-4</div>
+                                    </div>
+                                   <h3>Tên Tài Khoản : <h3 id="accountName"></h3></h3>
+                                </div>
+
+
+
+                            </ul>
             </div>
+
+            </li>
+
+                    <%  } %>
+                </ul>
+             
+
+
+        </div>
         </div>
     </nav>
     <div>
@@ -70,6 +94,7 @@
 <script src="/js/bootstrap.js"></script>
 <script src="/js/html5shiv.js"></script>
 <script src="/js/flip-carousel.js"></script>
+
 <asp:contentplaceholder id="Footer" runat="server">
     </asp:contentplaceholder>
 </html>

@@ -63,3 +63,9 @@
 .seat {
     padding: 0;
 }
+.table{
+    font-size: 0.88rem;
+}
+.chairSpaces{
+    margin: 4px 9px;
+}

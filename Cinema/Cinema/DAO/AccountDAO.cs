@@ -26,9 +26,17 @@ namespace Cinema.DAO
 
         public bool checkAccount(Account account)
         {
-            String query = "SELECT * FROM dbo.TAIKHOAN WHERE tenTK ='"+account.UserName+"' AND matKhau='"+account.Password+"'";
+            string query = "SELECT * FROM dbo.TAIKHOAN WHERE tenTK ='" + account.UserName + "' AND matKhau='" + account.Password + "'";
 
-            return DataProvider.Instance.Query(query).Rows.Count > 0;
+            return DataProvider.Instance.reader(query).Rows.Count > 0;
+        }
+        public bool isAdmin(Account account)
+        {
+
+            string query = "SELECT idLoaiTK FROM dbo.TAIKHOAN WHERE tenTK='" + account.UserName + "'";
+            if ((string)DataProvider.Instance.scalar(query) == "AD")
+                return true;
+            return false;
         }
     }
 }

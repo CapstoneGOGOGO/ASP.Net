@@ -10,7 +10,7 @@
                 Bố cục phòng
             </h4>
             <div class="card-body">
-                
+                <asp:PlaceHolder ID="allChairs" runat="server" />
             </div>
         </div>
     </div>

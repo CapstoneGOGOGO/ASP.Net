@@ -49,6 +49,15 @@ namespace Cinema {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl navContact;
         
         /// <summary>
+        /// navRegister control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navRegister;
+        
+        /// <summary>
         /// navLogin control.
         /// </summary>
         /// <remarks>
@@ -58,13 +67,22 @@ namespace Cinema {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl navLogin;
         
         /// <summary>
-        /// navRegister control.
+        /// navUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navRegister;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl navUser;
+        
+        /// <summary>
+        /// name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton name;
         
         /// <summary>
         /// Body control.

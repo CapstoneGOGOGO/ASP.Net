@@ -96,9 +96,9 @@
   <ItemGroup>
     <Content Include="admin\Default.aspx" />
     <Content Include="admin\roomlayout.aspx" />
-    <Content Include="admin\roomnanger.aspx" />
-    <Content Include="content\chitietphim.aspx" />
+    <Content Include="admin\roommanager.aspx" />
     <Content Include="content\chonloaive.aspx" />
+    <Content Include="content\filmdetail.aspx" />
     <Content Include="content\home.aspx" />
     <Content Include="content\login.aspx" />
     <Content Include="content\register.aspx" />
@@ -161,24 +161,30 @@
     <Compile Include="admin\roomlayout.aspx.designer.cs">
       <DependentUpon>roomlayout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\roomnanger.aspx.cs">
-      <DependentUpon>roomnanger.aspx</DependentUpon>
+    <Compile Include="admin\roommanager.aspx.cs">
+      <DependentUpon>roommanager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\roomnanger.aspx.designer.cs">
-      <DependentUpon>roomnanger.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="content\chitietphim.aspx.cs">
-      <DependentUpon>chitietphim.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="admin\roommanager.aspx.designer.cs">
+      <DependentUpon>roommanager.aspx</DependentUpon>
     </Compile>
     <Compile Include="content\chonloaive.aspx.cs">
       <DependentUpon>chonloaive.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="content\filmdetail.aspx.cs">
+      <DependentUpon>filmdetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\filmdetail.aspx.designer.cs">
+      <DependentUpon>filmdetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="content\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="content\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -200,6 +206,8 @@
     </Compile>
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\FilmDAO.cs" />
+    <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,9 +223,11 @@
       <DependentUpon>layout.Master</DependentUpon>
     </Compile>
     <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\Room.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="images\poster\" />
     <Folder Include="images\slide\" />
   </ItemGroup>
   <PropertyGroup>
