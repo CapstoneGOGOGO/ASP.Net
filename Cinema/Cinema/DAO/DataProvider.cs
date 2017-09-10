@@ -21,7 +21,7 @@ namespace Cinema.DAO
             }
         }
         private String stringConnection = "Data Source=DESKTOP-J6H04BI\\SQLEXPRESS;Initial Catalog=QLCGV;Integrated Security=True";
-        public DataTable Query(String query )
+        public DataTable reader(String query )
         {
            
             SqlConnection cnn = new SqlConnection(stringConnection);
@@ -32,6 +32,32 @@ namespace Cinema.DAO
             adapter.Fill(table);
             cnn.Close();
             return table;
+        }
+        public int nonQuery(string query)
+        {
+            int data = 0;
+
+            SqlConnection connection = new SqlConnection(stringConnection);
+
+
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                data = command.ExecuteNonQuery(); // Số dòng thay đổi
+
+                connection.Close();
+            
+
+            return data;
+        }
+        public object scalar(String query)
+        {
+            SqlConnection cnn = new SqlConnection(stringConnection);
+            Object data = 0;
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(query, cnn);
+            data = cmd.ExecuteScalar();
+            cnn.Close();
+            return data;
         }
     }
 }

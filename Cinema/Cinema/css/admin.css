@@ -63,3 +63,21 @@
 .seat {
     padding: 0;
 }
+.table{
+    font-size: 0.88rem;
+}
+.chairSpaces{
+    margin: 4px 9px;
+}
+/*Ngay DS Lich Chieu*/
+.dayLC {
+    display: inline-block;
+}
+.filter {
+    vertical-align: top;
+
+}
+/*DSPhim*/
+.ip2{
+    padding-right: 40px;
+}

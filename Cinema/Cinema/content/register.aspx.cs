@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -28,22 +29,30 @@ namespace Cinema.content
                 string Password = password.Value;
                 string RePassword = rePassword.Value;
                 Debug.Write(name + dob + sex + City + District + Wards + PhoneNumber + ID + Account + Password + RePassword);
-                Debug.Write(name + dob + sex + City + District + Wards + PhoneNumber + ID + Account + Password + RePassword);
             }
         }
 
         private void city_Load()
         {   
             city.DataSource = DAO.MapDAO.Instance.getListCity();
-         
             city.DataBind();
             city.Items.Insert(0, "--Tỉnh Thành--");
             district.Items.Insert(0, "--Quận Huyện--");
             wards.Items.Insert(0, "--Phường Xã--");
         }
 
+        protected void city_TextChanged(object sender, EventArgs e)
+        {
+            district.DataSource = DAO.MapDAO.Instance.getListDistrict(city.Text);
+            district.DataBind();
+            wards.DataSource = DAO.MapDAO.Instance.getListWard(district.Text);
+            wards.DataBind();
         }
 
-      
+        protected void district_TextChanged(object sender, EventArgs e)
+        {
+            wards.DataSource = DAO.MapDAO.Instance.getListWard(district.Text);
+            wards.DataBind();
+        }
     }
 }
