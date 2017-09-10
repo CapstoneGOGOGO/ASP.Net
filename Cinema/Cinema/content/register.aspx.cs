@@ -35,7 +35,7 @@ namespace Cinema.content
         private void city_Load()
         {   
             city.DataSource = DAO.MapDAO.Instance.getListCity();
-         
+         Debug.Write(name + dob + sex + City + District + Wards + PhoneNumber + ID + Account + Password + RePassword);
             city.DataBind();
             city.Items.Insert(0, "--Tỉnh Thành--");
             district.Items.Insert(0, "--Quận Huyện--");
