@@ -21,7 +21,11 @@ namespace Cinema.content
             {
                 Account account = new Account(userName.Value, password.Value);
                 if (AccountDAO.Instance.checkAccount(account))
+                {
+                    Session["account"] = account.UserName;
+
                     Response.Redirect("home.aspx");
+                }
                 else
                 {
                     alert.Attributes["class"] = "alert alert-danger";

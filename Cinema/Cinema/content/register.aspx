@@ -13,88 +13,75 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Tên khách hàng *</label>
-                            <input type="text" class="form-control" placeholder="Điền tên..." />
+                            <input id="nameOfCus" runat="server" type="text" class="form-control" placeholder="Điền tên..."  required="required"/>
                         </div>
                          <div class="form-group">
                             <label>Ngày sinh</label>
-                            <input type="datetime" id="birthdate" data-provide="datepicker" placeholder="Chọn ngày sinh..." class="form-control">
+                            <input id="dateOfBirth" runat="server" type="datetime"  data-provide="datepicker" placeholder="Chọn ngày sinh..." class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Giới tính</label>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <label class="custom-control custom-radio">
-                                        <input id="male" name="sex" type="radio" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Nam</span>
-                                    </label>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label class="custom-control custom-radio">
-                                        <input id="female" name="sex" type="radio" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Nữ</span>
-                                    </label>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label class="custom-control custom-radio">
-                                        <input id="other" name="sex" type="radio" class="custom-control-input" checked="checked">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Buê Đuê</span>
-                                    </label>
-                                </div>
-                            </div>
+                            <label>Giới tính : </label>
+                           <div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-Radio active">
+    <input type="radio" name="options" id="male" autocomplete="off" value="0" checked runat="server"> Nam
+  </label>
+  <label class="btn btn-Radio">
+    <input type="radio" name="options" id="female" autocomplete="off" value="1"> Nữ
+  </label>
+ 
+</div>
                         </div>
+           
+   
+                    
                         <div class="form-group">
                             <label>Địa chỉ *</label>
-                            <input type="text" class="form-control" placeholder="Nhập địa chỉ..." />
+                         <div class="form-inline">
+                                <asp:DropDownList ID="city" CssClass="form-control" runat="server" style="width: 33%;"  OnTextChanged="city_TextChanged" AutoPostBack="true"></asp:DropDownList>                          
+                                <asp:DropDownList ID="district" CssClass="form-control" runat="server"  style="width: 33%;" OnTextChanged="district_TextChanged" AutoPostBack="true"></asp:DropDownList>
+                                <asp:DropDownList ID="wards" CssClass="form-control" runat="server"  style="width: 33%;"></asp:DropDownList>
                         </div>
-                        <div class="form-group">
-                            <label>Quận / Huyện *</label>
-                            <input type="text" class="form-control" placeholder="Nhập quận (huyện)..." />
+               
+                            </div>
+                         <div class="form-group">
+                            <label>Số điện thoại *</label>
+                            <input id="phoneNumber" runat="server" type="text" class="form-control" placeholder="Nhập số điện thoại..." />
                         </div>
-                        <div class="form-group">
-                            <label>Thành phố *</label>
-                            <input type="text" class="form-control" placeholder="Nhập thành phố..." />
-                            <small class="form-text text-muted">* Mục bắt buộc.</small>
-                        </div>
+                             <p style="color:red;">* Mục bắt buộc.</p>
                     </div>
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Số điện thoại *</label>
-                            <input type="text" class="form-control" placeholder="Nhập số điện thoại..." />
-                        </div>
+                       
                         <div class="form-group">
                             <label>Số CMND *</label>
-                            <input type="text" class="form-control" placeholder="Nhập số CMND..." />
+                            <input id="id" runat="server" type="text" class="form-control" placeholder="Nhập số CMND..." />
                         </div>
                         <div class="form-group">
                             <label>Địa chỉ Email *</label>
-                            <input type="text" class="form-control" placeholder="Nhập địa chỉ Email..." />
+                            <input id="email" runat="server" type="text" class="form-control" placeholder="Nhập địa chỉ Email..." />
                         </div>
                         <div class="form-group">
                             <label>Tên tài khoản *</label>
-                            <input type="text" class="form-control" placeholder="Nhập tên tài khoản..." />
+                            <input id="account" runat="server" type="text" class="form-control" placeholder="Nhập tên tài khoản..." />
                         </div>
                         <div class="form-group">
                             <label>Mật khẩu *</label>
-                            <input type="password" class="form-control" placeholder="Nhập mật khẩu..." />
+                            <input id="password" runat="server" type="password" class="form-control" placeholder="Nhập mật khẩu..." />
                         </div>
                         <div class="form-group">
                             <label>Nhập lại mật khẩu *</label>
-                            <input type="password" class="form-control" placeholder="Nhập mật khẩu..." />
+                            <input id="rePassword" runat="server" type="password" class="form-control" placeholder="Nhập mật khẩu..." />
                         </div>
                     </div>
 
                     <div class="col-12 ">
                         <div class="form-check d-flex justify-content-center">
                             <label class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input">
+                                <input runat="server" type="checkbox" class="custom-control-input"/>
                                 <span class="custom-control-indicator"></span>
                                 <span class="custom-control-description">Tôi đã đọc hiểu và đồng ý các điều khoản</span>
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-danger btn-block">Đăng ký</button>
+                        <asp:Button ID="regis" runat="server" Text="Đăng Ký" class="btn btn-danger btn-block" />
                     </div>
                 </div>
             </form>

@@ -1,9 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.master" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="content_home2" %>
-
+﻿<%@ Page Title="CGV | Trang Chủ" Language="C#" MasterPageFile="~/layout.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="Cinema.content.home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Header" runat="Server">
-    <title>CGV | Trang Chủ</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="Server">
+    <script type="text/javascript"> 
+            function showModal() { 
+                $(window).on('load', function () {
+                    $('#myModal').modal('show');
+                });
+            } 
+        </script> 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -48,34 +53,34 @@
                 <i class="fa fa-film" aria-hidden="true" style="margin-right: 11px;"></i>Phim đang chiếu
             </div>
             <div class="card-body cgv-card-body">
-                <article title="Đột kích hồ giấu vàng">
-                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/240x388/dd828b13b1cb77667d034d5f59a82eb6/r/e/renegades240x355.jpg" />
-                </article>
-                <article title="item2">
-                    <a href="chitietphim.aspx"><img src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/240x388/dd828b13b1cb77667d034d5f59a82eb6/y/d/ydds240x355.jpg" /></a>
-                </article>
-                <article title="item3">
-                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/240x388/dd828b13b1cb77667d034d5f59a82eb6/h/a/happy240x355.jpg" />
-                </article>
-                <article title="item4">
-                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/240x388/dd828b13b1cb77667d034d5f59a82eb6/a/m/american_made_240x355.png" />
-                </article>
-                <article title="item5">
-                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/240x388/dd828b13b1cb77667d034d5f59a82eb6/t/h/thenut240x355.jpg" />
-                </article>
-                <article title="item6">
-                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/240x388/dd828b13b1cb77667d034d5f59a82eb6/n/a/nang2offical240x355.png" />
-                </article>
-                <article title="item7">
-                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/240x388/dd828b13b1cb77667d034d5f59a82eb6/2/4/240x377ddn.jpg" />
-                </article>
-                <article title="item8">
-                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/small_image/240x388/dd828b13b1cb77667d034d5f59a82eb6/i/m/imax240x355.jpg" />
-                </article>
+                <asp:PlaceHolder ID="listFilm" runat="server" />
             </div>
         </div>
+        
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+          <h4 class="modal-title">Xin Chào</h4>
+      </div>
+      <div class="modal-body">
+        <p>Bạn đang đăng nhập với tài khoản ADMIN .Bạn có muốn truy cập trang quản lý ?.</p>
+      </div>
+      <div class="modal-footer">
+            <a href="/admin/Default.aspx" > <button type="button" class="btn btn-info">Truy Cập</button></a> 
+
+        <button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="Server">
+    <asp:label id="openModal" runat="server"></asp:label>
     <script>
         $('article').flipcarousel({
             pagination: false,
@@ -83,6 +88,11 @@
             itemsperpage: 4,
             randomizer: 0.7
         });
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+       
     </script>
+    
 </asp:Content>
 

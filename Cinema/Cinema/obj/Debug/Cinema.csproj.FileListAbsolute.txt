@@ -1,69 +1,36 @@
-D:\WebProject\Cinema\Cinema\bin\ApplicationInsights.config
-D:\WebProject\Cinema\Cinema\bin\roslyn\csc.exe
-D:\WebProject\Cinema\Cinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\WebProject\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\WebProject\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\WebProject\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\WebProject\Cinema\Cinema\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\WebProject\Cinema\Cinema\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\WebProject\Cinema\Cinema\bin\roslyn\System.Collections.Immutable.dll
-D:\WebProject\Cinema\Cinema\bin\roslyn\System.Reflection.Metadata.dll
-D:\WebProject\Cinema\Cinema\bin\roslyn\vbc.exe
-D:\WebProject\Cinema\Cinema\bin\roslyn\VBCSCompiler.exe
-D:\WebProject\Cinema\Cinema\bin\roslyn\VBCSCompiler.exe.config
-D:\WebProject\Cinema\Cinema\bin\Cinema.dll.config
-D:\WebProject\Cinema\Cinema\bin\Cinema.dll
-D:\WebProject\Cinema\Cinema\bin\Cinema.pdb
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.Agent.Intercept.dll
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.DependencyCollector.dll
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.PerfCounterCollector.dll
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.ServerTelemetryChannel.dll
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.Web.dll
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.WindowsServer.dll
-D:\WebProject\Cinema\Cinema\bin\Microsoft.ApplicationInsights.dll
-D:\WebProject\Cinema\Cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.DependencyCollector.xml
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.ServerTelemetryChannel.xml
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.Web.xml
-D:\WebProject\Cinema\Cinema\bin\Microsoft.AI.WindowsServer.xml
-D:\WebProject\Cinema\Cinema\bin\Microsoft.ApplicationInsights.xml
-D:\WebProject\Cinema\Cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\WebProject\Cinema\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache
-D:\WebProject\Cinema\Cinema\obj\Debug\Cinema.dll
-D:\WebProject\Cinema\Cinema\obj\Debug\Cinema.pdb
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\ApplicationInsights.config
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\csc.exe
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\System.Collections.Immutable.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\System.Reflection.Metadata.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\vbc.exe
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\VBCSCompiler.exe
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\roslyn\VBCSCompiler.exe.config
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Cinema.dll.config
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Cinema.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Cinema.pdb
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.Agent.Intercept.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.DependencyCollector.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.PerfCounterCollector.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.ServerTelemetryChannel.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.Web.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.WindowsServer.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.ApplicationInsights.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.DependencyCollector.xml
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.ServerTelemetryChannel.xml
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.Web.xml
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.WindowsServer.xml
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.ApplicationInsights.xml
-D:\WebProject\ASP.Net\Cinema\Cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\WebProject\ASP.Net\Cinema\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache
-D:\WebProject\ASP.Net\Cinema\Cinema\obj\Debug\Cinema.dll
-D:\WebProject\ASP.Net\Cinema\Cinema\obj\Debug\Cinema.pdb
+F:\ASP.Net\Cinema\Cinema\bin\ApplicationInsights.config
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\csc.exe
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\System.Collections.Immutable.dll
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\System.Reflection.Metadata.dll
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\vbc.exe
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\VBCSCompiler.exe
+F:\ASP.Net\Cinema\Cinema\bin\roslyn\VBCSCompiler.exe.config
+F:\ASP.Net\Cinema\Cinema\bin\Cinema.dll.config
+F:\ASP.Net\Cinema\Cinema\bin\Cinema.dll
+F:\ASP.Net\Cinema\Cinema\bin\Cinema.pdb
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.Agent.Intercept.dll
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.DependencyCollector.dll
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.Web.dll
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.WindowsServer.dll
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.ApplicationInsights.dll
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.DependencyCollector.xml
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.Web.xml
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.AI.WindowsServer.xml
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.ApplicationInsights.xml
+F:\ASP.Net\Cinema\Cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASP.Net\Cinema\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache
+F:\ASP.Net\Cinema\Cinema\obj\Debug\Cinema.dll
+F:\ASP.Net\Cinema\Cinema\obj\Debug\Cinema.pdb
 C:\ASP.Net\Cinema\Cinema\bin\ApplicationInsights.config
 C:\ASP.Net\Cinema\Cinema\bin\roslyn\csc.exe
 C:\ASP.Net\Cinema\Cinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -97,3 +64,36 @@ C:\ASP.Net\Cinema\Cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.
 C:\ASP.Net\Cinema\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache
 C:\ASP.Net\Cinema\Cinema\obj\Debug\Cinema.dll
 C:\ASP.Net\Cinema\Cinema\obj\Debug\Cinema.pdb
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\ApplicationInsights.config
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\csc.exe
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\vbc.exe
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\VBCSCompiler.exe
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Cinema.dll.config
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Cinema.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Cinema.pdb
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.Web.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.Web.xml
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\obj\Debug\Cinema.csprojResolveAssemblyReference.cache
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\obj\Debug\Cinema.dll
+C:\Users\Duong Le\Desktop\ASP.Net-nhan\Cinema\Cinema\obj\Debug\Cinema.pdb
