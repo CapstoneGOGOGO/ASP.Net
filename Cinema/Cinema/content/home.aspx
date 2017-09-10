@@ -2,6 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Header" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="Server">
+    <script type="text/javascript"> 
+            function showModal() { 
+                $(window).on('load', function () {
+                    $('#myModal').modal('show');
+                });
+            } 
+        </script> 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -49,8 +56,31 @@
                 <asp:PlaceHolder ID="listFilm" runat="server" />
             </div>
         </div>
+        
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+          <h4 class="modal-title">Xin Chào</h4>
+      </div>
+      <div class="modal-body">
+        <p>Bạn đang đăng nhập với tài khoản ADMIN .Bạn có muốn truy cập trang quản lý ?.</p>
+      </div>
+      <div class="modal-footer">
+            <a href="/admin/Default.aspx" > <button type="button" class="btn btn-info">Truy Cập</button></a> 
+
+        <button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="Server">
+    <asp:label id="openModal" runat="server"></asp:label>
     <script>
         $('article').flipcarousel({
             pagination: false,
@@ -61,6 +91,8 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
+       
     </script>
+    
 </asp:Content>
 

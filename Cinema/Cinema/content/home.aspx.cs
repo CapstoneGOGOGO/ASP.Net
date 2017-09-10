@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Text;
 using System.Configuration;
+using System.Diagnostics;
 
 namespace Cinema.content
 {
@@ -16,6 +17,10 @@ namespace Cinema.content
         protected void Page_Load(object sender, EventArgs e)
         {
             getFilmList();
+           
+            if (Session["account"] != null)
+            if (DAO.AccountDAO.Instance.isAdmin(Session["account"].ToString())) 
+                    openModal.Text = "<script type='text/javascript'>showModal();</script>";
         }
         protected void getFilmList()
         {

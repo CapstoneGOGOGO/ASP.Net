@@ -1,9 +1,11 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layout.master.cs" Inherits="Cinema.layout" %>
-
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layout.master.cs" Inherits="Cinema.layout" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+     
 <head runat="server">
+    
     <asp:ContentPlaceHolder ID="Header" runat="server">
     </asp:ContentPlaceHolder>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
@@ -11,6 +13,7 @@
     <link href="/css/font-awesome.css" rel="stylesheet" />
     <link href="/css/cgv.css" rel="stylesheet" />
     <link href="/css/flip-carousel.css" rel="stylesheet" />
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -28,7 +31,7 @@
                         <a class="nav-link" href="/content/home.aspx">Phim</a>
                     </li>
                     <li class="nav-item nav-cgv-item" id="navSchedule" runat="server" style="width: 20%;">
-                        <a class="nav-link" href="#">Lịch chiếu</a>
+                        <a class="nav-link" href="/content/filmschedule.aspx">Lịch chiếu</a>
                     </li>
                     <li class="nav-item nav-cgv-item" id="navContact" runat="server" style="width: 20%;">
                         <a class="nav-link" href="#">Liên hệ CGV</a>
@@ -36,6 +39,8 @@
                     <li class="nav-item nav-cgv-item" id="navRegister" runat="server" style="width: 20%;">
                         <a class="nav-link" href="/content/register.aspx">Đăng ký</a>
                     </li>
+
+
                     <% if (Session["account"] == null)
                         {  %>
                     <li class="nav-item nav-cgv-item" id="navLogin" runat="server" style="width: 20%; color: azure;">
@@ -44,22 +49,47 @@
                     <%  }
                         else
                         {%>
-                    <li id="navUser" runat="server" style="width: 20%; color: azure;">
+                   
+                           
+ <li id="navUser" runat="server" style="width: 20%; color: azure;">
                         <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="name" runat="server" style="height: 100%; background-color: initial; margin-top: 3%; border-color: crimson;" />
-                            <ul class="dropdown-menu" style="width: 300%;background-color: rgba(0, 255, 255, 0);"">
+                            <ul class="dropdown-menu" style="width: 400%;background-color: rgba(0, 255, 255, 0);"">
 
-                                
-                                   <div class="page-header"> <h3 style="background-color: #c9d6bd;">Thông Tin Tài Khoản</h3></div>
-                                <div class="jumbotron" style="background-color: rgb(230, 229, 184);margin-top: -12px;">
+                                <div class="jumbotron" style="background-color: rgba(230, 229, 184, 0.65);margin-top: -12px;height:100%;" runat="server">
 
 
 
                                     <div class="row">
-                                            <div class="col-sm-3">.col-sm-4</div>
-                                            <div class="col-sm-9">.col-sm-4</div>
+                                            <div class="col-sm-3"><img src="/images/avatar/captain.png" class="img-rounded" alt="Cinque Terre"  width="200" height="200" /></div>
+                                            <div class="col-sm-9" style="padding-left: 10%;">
+
+                                                <h5>Tên tài khoản : <span id="account" runat="server"/></h5>
+                                                <h5>Quyền hạn : <span id="roles" runat="server"/></h5>
+                                                <h5>Địa chỉ: <span id="address" runat="server"/></h5>
+                                                <h5>Điểm tích lũy: <span id="point" runat="server"/></h5>
+                                                <br />
+
+
+                                             
+                                                    <% if (Session["isAdmin"] != null) {  %>
+                                                  <a href="/admin/Default.aspx" > <button type="button" class="btn btn-info">Trang quản lý</button></a> 
+                                                   <% } %> 
+
+                                              
+                                                                
+                                                   
+
+
+                                                <button type="button" class="btn btn-info">Quản lý thông tin</button>
+
+                                              
+
+                                          <a href="/content/home.aspx" > <button type="button" class="btn btn-warning" onclick="clearSession()" >Đăng Xuất </button></a>
+
+                                            </div>
                                     </div>
-                                   <h3>Tên Tài Khoản : <h3 id="accountName"></h3></h3>
+                                 
                                 </div>
 
 
@@ -68,11 +98,12 @@
             </div>
 
             </li>
-
-                    <%  } %>
-                </ul>
+  
+                  
+                          <%}%>
              
-
+                </ul>
+              
 
         </div>
         </div>
@@ -89,12 +120,22 @@
         </div>
     </div>
 </body>
+   
 <script src="/js/jquery.js"></script>
 <script src="/js/popper.min.js"></script>
 <script src="/js/bootstrap.js"></script>
 <script src="/js/html5shiv.js"></script>
 <script src="/js/flip-carousel.js"></script>
+<script src="/js/bootstrap-datepicker.js"></script>
+<script src="/js/bootstrap-datepicker.vi.min.js"></script>
+    <script>
+        function clearSession() {
+            <% if(!IsPostBack)Session.Clear(); %>
+        }
 
+
+    </script>
 <asp:contentplaceholder id="Footer" runat="server">
     </asp:contentplaceholder>
 </html>
+

@@ -20,7 +20,7 @@ namespace Cinema.DAO
                 return instance;
             }
         }
-        private String stringConnection = "Data Source=DESKTOP-A1GD3SD\\SQLEXPRESS;Initial Catalog=QLCGV;Integrated Security=True";
+        private String stringConnection = "Data Source=DESKTOP-J6H04BI\\SQLEXPRESS;Initial Catalog=QLCGV;Integrated Security=True";
         public DataTable reader(String query )
         {
            

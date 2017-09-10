@@ -10,24 +10,24 @@
 namespace Cinema.content {
     
     
-    public partial class home {
+    public partial class filmschedule {
         
         /// <summary>
-        /// listFilm control.
+        /// film_detailcontent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder listFilm;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl film_detailcontent;
         
         /// <summary>
-        /// openModal control.
+        /// listSchedule control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label openModal;
+        protected global::System.Web.UI.WebControls.PlaceHolder listSchedule;
     }
 }

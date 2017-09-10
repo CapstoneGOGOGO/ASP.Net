@@ -22,7 +22,7 @@ namespace Cinema.content
                 Page.Title = "CGV | " + sql.Rows[0]["tenPhim"].ToString();
                 StringBuilder html = new StringBuilder();
                 //Hiển thị thông tin chi tiết phim ra trang
-                film_poster.Attributes["src"] = "/images/poster/"+sql.Rows[0]["poster"].ToString();
+                film_poster.Attributes["src"] = "/images/poster/" + sql.Rows[0]["poster"].ToString();
                 film_ten.InnerText = film_bigname.InnerText = sql.Rows[0]["tenPhim"].ToString();
                 film_daodien.InnerText = sql.Rows[0]["daoDien"].ToString();
                 film_dienvien.InnerText = sql.Rows[0]["dienVien"].ToString();
@@ -32,6 +32,7 @@ namespace Cinema.content
                 film_ngonngu.InnerText = sql.Rows[0]["ngonNgu"].ToString();
                 film_mota.InnerText = sql.Rows[0]["moTa"].ToString();
                 film_khoichieu.InnerText = sql.Rows[0]["khoiChieu"].ToString();
+                film_trailer.Attributes["src"] = "https://www.youtube.com/embed/" + sql.Rows[0]["trailer"].ToString();
             }
             else
             {

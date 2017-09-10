@@ -1,9 +1,10 @@
 ﻿using Cinema.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
-
+using System.Data;
 namespace Cinema.DAO
 {
     public class AccountDAO
@@ -30,13 +31,17 @@ namespace Cinema.DAO
 
             return DataProvider.Instance.reader(query).Rows.Count > 0;
         }
-        public bool isAdmin(Account account)
+        public bool isAdmin(string userName)
         {
-
-            string query = "SELECT idLoaiTK FROM dbo.TAIKHOAN WHERE tenTK='" + account.UserName + "'";
-            if ((string)DataProvider.Instance.scalar(query) == "AD")
-                return true;
+            string query = "SELECT idLoaiTK FROM dbo.TAIKHOAN WHERE tenTK='" + userName + "'";
+            if ((string)DataProvider.Instance.scalar(query) == "AD") 
+            return true;
             return false;
+        }
+        public DataTable getProfiles(string username)
+        {
+            DataTable accinfo = DAO.DataProvider.Instance.reader("SELECT * from NGUOIDUNG WHERE tenTk='" + username + "'");
+            return accinfo;
         }
     }
 }

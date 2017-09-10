@@ -40,5 +40,16 @@ namespace Cinema.DAO
 
             return DataProvider.Instance.reader(query).Rows.Count > 0;
         }
+        public DataTable getFilmSchedule()
+        {
+            //DataTable scheduledata = DAO.DataProvider.Instance.reader("SELECT * FROM LICHCHIEU AS lc INNER JOIN SUATCHIEU AS sc ON lc.idSuatChieu = sc.idSuatChieu INNER JOIN PHIM AS p ON lc.idPhim = p.idPhim GROUP BY lc.idPhim, PHIM.poster");
+            DataTable scheduledata = DAO.DataProvider.Instance.reader("SELECT p.idPhim,p.poster FROM LICHCHIEU AS lc INNER JOIN PHIM AS p ON lc.idPhim = p.idPhim GROUP BY p.idPhim,p.poster");
+            return scheduledata;
+        }
+        public DataTable getTimeline(string idPhim)
+        {
+            DataTable allsuatchieu = DAO.DataProvider.Instance.reader("SELECT gioBatDau,loaiHinhPhong FROM LICHCHIEU AS LC INNER JOIN SUATCHIEU AS SC ON LC.idSuatChieu=SC.idSuatChieu INNER JOIN PHONG ON PHONG.idPhong=LC.idPhong WHERE idPHim='" + idPhim + "' ORDER BY gioBatDau");
+            return allsuatchieu;
+        }
     }
 }

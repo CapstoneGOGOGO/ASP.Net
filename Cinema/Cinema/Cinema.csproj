@@ -94,14 +94,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\acctypes.aspx" />
+    <Content Include="admin\chairtypes.aspx" />
     <Content Include="admin\Default.aspx" />
     <Content Include="admin\roomlayout.aspx" />
     <Content Include="admin\roommanager.aspx" />
+    <Content Include="admin\schedulelist.aspx" />
     <Content Include="content\chonloaive.aspx" />
     <Content Include="content\filmdetail.aspx" />
+    <Content Include="content\filmschedule.aspx" />
     <Content Include="content\home.aspx" />
     <Content Include="content\login.aspx" />
+    <Content Include="content\profiles.aspx" />
     <Content Include="content\register.aspx" />
+    <Content Include="content\test.aspx" />
     <Content Include="content\thongtintaikhoan.aspx" />
     <Content Include="css\admin.css" />
     <Content Include="css\bootstrap.css" />
@@ -110,11 +116,14 @@
     <Content Include="css\font-awesome.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="images\avatar\captain.png" />
+    <Content Include="images\avatar\duongle.png" />
     <Content Include="images\background.jpg" />
     <Content Include="images\cgv-btn.png" />
     <Content Include="images\cgvlogo.png" />
     <Content Include="images\footer.jpg" />
     <Content Include="images\transparent.png" />
+    <Content Include="js\background-blur.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\popper.min.js" />
@@ -127,8 +136,8 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
-    <Content Include="layout.Master" />
     <Content Include="adminlayout.Master" />
+    <Content Include="layout.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -146,6 +155,20 @@
     </Compile>
     <Compile Include="adminlayout.Master.designer.cs">
       <DependentUpon>adminlayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\acctypes.aspx.cs">
+      <DependentUpon>acctypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\acctypes.aspx.designer.cs">
+      <DependentUpon>acctypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\chairtypes.aspx.cs">
+      <DependentUpon>chairtypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\chairtypes.aspx.designer.cs">
+      <DependentUpon>chairtypes.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -168,6 +191,13 @@
     <Compile Include="admin\roommanager.aspx.designer.cs">
       <DependentUpon>roommanager.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\schedulelist.aspx.cs">
+      <DependentUpon>schedulelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\schedulelist.aspx.designer.cs">
+      <DependentUpon>schedulelist.aspx</DependentUpon>
+    </Compile>
     <Compile Include="content\chonloaive.aspx.cs">
       <DependentUpon>chonloaive.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -178,6 +208,13 @@
     </Compile>
     <Compile Include="content\filmdetail.aspx.designer.cs">
       <DependentUpon>filmdetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content\filmschedule.aspx.cs">
+      <DependentUpon>filmschedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\filmschedule.aspx.designer.cs">
+      <DependentUpon>filmschedule.aspx</DependentUpon>
     </Compile>
     <Compile Include="content\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
@@ -193,6 +230,14 @@
     <Compile Include="content\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAO\MapDAO.cs" />
+    <Compile Include="content\profiles.aspx.cs">
+      <DependentUpon>profiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\profiles.aspx.designer.cs">
+      <DependentUpon>profiles.aspx</DependentUpon>
+    </Compile>
     <Compile Include="content\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -200,12 +245,20 @@
     <Compile Include="content\register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="content\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="content\thongtintaikhoan.aspx.cs">
       <DependentUpon>thongtintaikhoan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\CustomerDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\FilmDAO.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="Default.aspx.cs">
@@ -223,6 +276,7 @@
       <DependentUpon>layout.Master</DependentUpon>
     </Compile>
     <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\Room.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

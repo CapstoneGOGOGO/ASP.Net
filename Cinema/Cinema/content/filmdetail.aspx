@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                             <div class="buy-ticket">
-                                <button type="button" class="btn btn-danger btn-lg">MUA VÉ <i class="fa fa-ticket" aria-hidden="true"></i></button>
+                                <button type="button" id="film_buyticket" class="btn btn-danger btn-lg">MUA VÉ <i class="fa fa-ticket" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
@@ -86,26 +86,36 @@
                         </div>
                     </div>
                     <br />
+
                     <div class="card card-filmdetail">
+                        <div class="card-body">
+                            <h4 class="card-title">Trailer</h4>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" id="film_trailer" runat="server" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="card card-filmdetail" id="film_schedule">
                         <div class="card-body">
                             <div data-toggle="buttons">
                                 <h4 class="card-title">Lịch chiếu</h4>
                                 <!-- Xuất dữ liệu giờ chiếu từ database ra đây! -->
                                 <div class="form-group">Thứ 7, ngày 2/9/2017</div>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option1" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option1" />
                                     7:00 AM
                                     <br />
                                     40 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option2" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option2" />
                                     9:15 AM
                                     <br />
                                     17 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option3" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option3" />
                                     2:00 PM
                                     <br />
                                     5 ghế trống
@@ -113,37 +123,37 @@
                                 <hr />
                                 <div class="form-group">Chủ nhật, ngày 3/9/2017</div>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option4" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option4" />
                                     7:00 AM
                                     <br />
                                     40 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option5" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option5" />
                                     9:15 AM
                                     <br />
                                     17 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option6" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option6" />
                                     2:00 PM
                                     <br />
                                     5 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option7" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option7" />
                                     6:00 PM
                                     <br />
                                     5 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option8" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option8" />
                                     8:00 PM
                                     <br />
                                     5 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option9" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option9" />
                                     10:00 PM
                                     <br />
                                     5 ghế trống
@@ -151,31 +161,31 @@
                                 <hr />
                                 <div class="form-group">Thứ 2, ngày 4/9/2017</div>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option10" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option10" />
                                     7:00 AM
                                     <br />
                                     40 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option11" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option11" />
                                     9:15 AM
                                     <br />
                                     17 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option12" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option12" />
                                     2:00 PM
                                     <br />
                                     5 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option13" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option13" />
                                     6:00 PM
                                     <br />
                                     5 ghế trống
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="showtimes1" id="option14" autocomplete="off" />
+                                    <input type="radio" name="showtimes1" id="option14" />
                                     9:00 PM
                                     <br />
                                     5 ghế trống
@@ -189,4 +199,14 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="Server">
+    <script>
+        $("#film_buyticket").click(function () {
+            if (!$("[name='showtimes1']").is(':checked')) {
+                $('html, body').animate({
+                    scrollTop: $("#film_schedule").offset().top
+                }, 500);
+            }
+        });
+
+    </script>
 </asp:Content>
